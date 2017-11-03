@@ -1,0 +1,52 @@
+@import "~font-awesome/css/font-awesome.css";
+
+body {
+  position: relative;
+  color: rgb(74, 75, 83);
+  height: 100vh;
+  background-color: #e9ebee;
+  /*
+  background-color: #f7f5ad;
+  background-image: linear-gradient(45deg, rgba(252, 177, 14, 0.918) 10%, rgba(253, 249, 21, 0.7));
+  */
+  font-family: Arial, Helvetica, Helvetica Neue, serif;
+  overflow-y: hidden;
+  margin: 0;
+}
+
+#root {
+  margin-top: 0;
+  width: 100%;
+}
+
+h1 {
+  color: rgb(233, 185, 52)
+}
+
+h2 {
+  margin: 0;
+  font-size: 2.25rem;
+  font-weight: bold;
+  letter-spacing: -0.025em;
+  color: rgb(233, 185, 52)
+}
+
+p {
+  font-size: 24px;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: rgb(105, 142, 216);
+  opacity: 0.75;
+  text-decoration: none;
+}
+
+a:hover {
+  opacity: 1;
+  text-decoration: none;
+  cursor: pointer;
+}
