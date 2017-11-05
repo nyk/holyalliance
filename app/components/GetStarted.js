@@ -1,11 +1,11 @@
 // @flow
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom'; // $FlowFixMe
-import { withStyles } from 'material-ui/styles'; // $FlowFixMe
+import { Link } from 'react-router-dom';
+import { withStyles } from 'material-ui/styles';
 import Grid from 'material-ui/Grid';
-import CheckboxIcon from 'material-ui-icons/CheckBox'; // $FlowFixMe
-import Button from 'material-ui/Button'; // $FlowFixMe
-import Typography from 'material-ui/Typography'; // $FlowFixMe
+import CheckboxIcon from 'material-ui-icons/CheckBox';
+import Button from 'material-ui/Button';
+import Typography from 'material-ui/Typography';
 import List, { ListItem, ListItemIcon, ListItemText, } from 'material-ui/List';
 
 const styles = () => ({
@@ -39,16 +39,17 @@ class GetStarted extends Component {
 
   render() {
     const { classes, startClick } = this.props;
+
     return (
       <Grid className={classes.root}>
         <Grid container className={classes.panel}>
-          <Grid item xs="12">
+          <Grid item>
             <Typography className={classes.banner} type="display4" color="accent">Get Started</Typography>
             <Link className={classes.link} to="/new-alliance">
               <Typography type="display2">Create your flight plan</Typography>
             </Link>
           </Grid>
-          <Grid item xs="12">
+          <Grid item>
             <List className={classes.list}>
               <ListItem>
                 <ListItemIcon><CheckboxIcon /></ListItemIcon>
