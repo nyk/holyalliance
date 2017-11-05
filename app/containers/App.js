@@ -10,7 +10,7 @@ import MenuIcon from 'material-ui-icons/Menu';
 import SettingsIcon from 'material-ui-icons/Settings';
 import Typography from 'material-ui/Typography';
 
-const styles = theme => ({
+const styles = () => ({
   menuButton: {
     marginLeft: -12,
     marginRight: 20,
@@ -20,10 +20,12 @@ const styles = theme => ({
   },
 });
 
-class App extends Component {
-  props: {
-    children: Children
-  };
+type Props = {
+  children: Children,
+  classes: {[string]: string}
+};
+
+class App extends Component<Props> {
 
   render() {
     const { classes } = this.props;

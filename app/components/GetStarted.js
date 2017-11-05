@@ -30,12 +30,12 @@ const styles = () => ({
   }
 });
 
-class GetStarted extends Component {
-  // Declare flow types of props
-  props: {
-    classes: {[string]: string},
-    startClick: () => void
-  };
+type Props = {
+  classes: () => void,
+  startClick: () => void
+};
+
+class GetStarted extends Component<Props> {
 
   render() {
     const { classes, startClick } = this.props;
